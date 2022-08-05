@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfPlay"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="300" Width="480" Background="DarkCyan">
     <Grid>
-        <Button Height="50" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10">Hest</Button>
-        <Button Height="50" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,70">Test</Button>
+        <Button x:Name="AddBtn" Height="50" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10" Click="Add">Add</Button>
+        <Button x:Name="RemoveBtn" Height="50" Width="120" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,70" Click="Remove">Remove</Button>
+        <Button x:Name="WinnerBtn" Width="120" HorizontalAlignment="Left" Margin="10,130,0,0" Click="Winner" Height="50" VerticalAlignment="Top">Winner</Button>
+        <ListBox x:Name="listbox" Height="110" Width="120" VerticalAlignment="Top" HorizontalAlignment="Right" Margin="10" SelectionChanged="listbox_SelectionChanged"></ListBox>
+        <TextBox x:Name="textbox" Height="20" Width="120" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10"></TextBox>
     </Grid>
 </Window>
